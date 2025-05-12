@@ -60,6 +60,10 @@ bash
      docker-compose down```
 
 
+![image](https://github.com/user-attachments/assets/c1fc8864-c577-4ce6-a29f-cfd454c766f2)
+
+![image](https://github.com/user-attachments/assets/c1e11b62-6745-4f39-b6fb-ca06f3c051aa)
+
 
 
 
