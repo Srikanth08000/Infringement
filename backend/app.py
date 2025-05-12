@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 CORS(app)
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="OPEN_APIKEY")
 
 def fetch_patent_claims(patent_id):
     try:
