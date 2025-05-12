@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data
+    environment:
+      - OPENAI_API_KEY=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 # Hardcode the key here
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

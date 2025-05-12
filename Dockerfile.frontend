@@ -1,0 +1,7 @@
+FROM node:16
+WORKDIR /app
+COPY frontend/ .
+RUN npm install
+RUN chmod +x ./node_modules/.bin/react-scripts
+RUN npm run build
+CMD ["npm", "start"]
